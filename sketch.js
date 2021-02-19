@@ -112,7 +112,7 @@ function draw() {
       Player2.velocityY = 2
     }
 
-    if(keyDown("up")){
+    /*if(keyDown("up")){
       Player3.y = Player3.y-5
      
     }
@@ -125,7 +125,9 @@ function draw() {
     }
     if(keyDown("left")){
       Player3.x = Player3.x-5
-    }
+    }*/
+    player3.x = mouseX
+    player3.y = mouseY
 
     if(Player3.isTouching(ball)){
       ball.velocityX = random(1,6)
